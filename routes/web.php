@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Route;
  */
 
 //static pages
-Route::view('/', 'index')->name('index');
+Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/about', 'about')->name('about');
 Route::view('/portfolio', 'portfolio')->name('protfolio');
