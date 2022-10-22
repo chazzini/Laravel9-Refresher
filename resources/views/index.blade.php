@@ -212,8 +212,8 @@
                             data-aos-delay="100">
                             <div class="icon-box">
                                 <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                                <h4><a href="">{{ $service['title'] }}</a></h4>
-                                <p>{{ $service['description'] }} </p>
+                                <h4><a href="">{{ $service->title }}</a></h4>
+                                <p>{{ $service->description }} </p>
                             </div>
                         </div>
                     @endforeach

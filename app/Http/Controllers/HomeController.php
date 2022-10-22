@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Spatie\FlareClient\View;
 
 class HomeController extends Controller
@@ -14,21 +16,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $services = [
-            [
-                'title' =>'software development',
-                'description'=>'lorem  test is the content'
-            ],
-            [
-                'title' =>'graphic design',
-                'description'=>'lorem  test is the content'
-            ],
-            [
-                'title' =>'Programming',
-                'description'=>'lorem  test is the content'
-            ]
-        ];
+        $services = Service::all();
 
-        return view('index',['services' => $services]);
+        return view('index', ['services' => $services]);
     }
 }
