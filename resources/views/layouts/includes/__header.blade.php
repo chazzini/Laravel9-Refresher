@@ -33,11 +33,11 @@
         <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
         <!-- =======================================================
-      * Template Name: Arsha - v4.9.1
-      * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-      * Author: BootstrapMade.com
-      * License: https://bootstrapmade.com/license/
-      ======================================================== -->
+          * Template Name: Arsha - v4.9.1
+          * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+          * Author: BootstrapMade.com
+          * License: https://bootstrapmade.com/license/
+          ======================================================== -->
     </head>
 
     <body>
@@ -46,13 +46,13 @@
         <header id="header" class="fixed-top ">
             <div class="container d-flex align-items-center">
 
-                <h1 class="logo me-auto"><a href="index.html">Arsha</a></h1>
+                <h1 class="logo me-auto"><a href="{{ route('index') }}">Arsha</a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html" class="logo me-auto"><img src="{{ asset('assets/img/logo.png') }}" alt="" class="img-fluid"></a>-->
+                <!-- <a href="{{ route('index') }}" class="logo me-auto"><img src="{{ asset('assets/img/logo.png') }}" alt="" class="img-fluid"></a>-->
 
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                        <li><a class="nav-link scrollto active" href="{{ route('index') }}">Home</a></li>
                         <li><a class="nav-link scrollto" href="{{ route('about') }}">About</a></li>
                         <li><a class="nav-link scrollto" href="#services">Services</a></li>
                         <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>
