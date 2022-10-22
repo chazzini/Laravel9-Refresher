@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
  |
  */
 
-Route::get('/', function () {
-    return view('index');
-});
+//static pages
+Route::view('/', 'index')->name('index');
+Route::view('/contact', 'contact')->name('contact');
+Route::view('/about', 'about')->name('about');
+Route::view('/portfolio', 'portfolio')->name('protfolio');
